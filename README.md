@@ -34,7 +34,7 @@ _Run_
             ##############################
             Results for 1.2.3.4:
             ##############################
-                    status          => success
+                status          => success
 	            country         => <country>
 	            countryCode     => <country code>
 	            region          => <region>
