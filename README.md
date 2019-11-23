@@ -7,16 +7,16 @@ ________________
 This ruby script uses and API call to ip-api.com and extracts the json data in an easy to read format automatically for a quick and easy IP lookup.
 
 A successful lookup will provide:
-            - Country
-            - Country Code
-            - Region
-            - Region Name
-            - City
-            - Zip Code
-            - Latitude
-            - Longitude
-            - Timezone
-            - Internet Service Provider (ISP)
+- Country
+- Country Code
+- Region
+- Region Name
+- City
+- Zip Code
+- Latitude
+- Longitude
+- Timezone
+- Internet Service Provider (ISP)
 
 ________________
 
@@ -34,7 +34,7 @@ _Run_
             ##############################
             Results for 1.2.3.4:
             ##############################
-                        status          => success
+                    status          => success
 	            country         => <country>
 	            countryCode     => <country code>
 	            region          => <region>
