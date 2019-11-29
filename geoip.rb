@@ -55,7 +55,7 @@ module GeoIP
             def self.show(geoip_results)
                   json_attributes = ["status", "country", "countryCode", "region", "regionName", "city", "zip", "lat", "lon", "timezone", "isp"]
                   json_attributes.each do |result|
-                        puts "#{$reset}\t#{$bold}#{$underline}%s#{$reset}%s #{$green}=>#{$reset} #{$bold}#{$white}%s#{$reset}" % [result, " "*(15 - result.length), geoip_results[result].to_s]
+                        puts "#{$reset}\t#{$bold}#{$underline}%s#{$reset}%s #{$green}->#{$reset} #{$bold}#{$white}%s#{$reset}" % [result, " "*(12 - result.length), geoip_results[result].to_s]
                   end
             end
 
@@ -109,7 +109,7 @@ def main
                   if results
                         puts ""
                         make_line($grey, 30)
-                        puts "#{$bold}#{$green}Results for #{$white}#{geoip.ip_address}#{$reset}:"
+                        puts "#{$bold}#{$green}Results for #{$white}#{geoip.ip_address}#{$reset}#{$green}:#{$reset}"
                         make_line($grey, 30)
                         GeoIP::Parser.show(results)
                         make_line($grey, 30)
